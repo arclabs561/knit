@@ -2,7 +2,6 @@
 name = "knit"
 version = "0.1.0"
 edition = "2021"
-publish = false
 license = "MIT OR Apache-2.0"
 description = "Consensus fusion: RRF, Borda, Ensemble"
 repository = "https://github.com/arclabs561/knit"
