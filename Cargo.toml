@@ -1,10 +1,10 @@
 [package]
-name = "knit"
+name = "clasp"
 version = "0.1.0"
 edition = "2021"
 license = "MIT OR Apache-2.0"
 description = "Consensus fusion: RRF, Borda, Ensemble"
-repository = "https://github.com/arclabs561/knit"
+repository = "https://github.com/arclabs561/clasp"
 keywords = ["rank-fusion", "retrieval", "rrf"]
 categories = ["algorithms", "mathematics", "science"]
 

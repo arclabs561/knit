@@ -1,4 +1,4 @@
-//! # knit
+//! # clasp
 //!
 //! Consensus fusion primitives (rank fusion).
 //!
@@ -89,7 +89,7 @@ where
 /// # Example
 ///
 /// ```rust
-/// use knit::rrf_k_fuse;
+/// use clasp::rrf_k_fuse;
 ///
 /// let list1 = vec!["A", "B", "C"];
 /// let list2 = vec!["B", "A", "D"];

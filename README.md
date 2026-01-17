@@ -1,11 +1,11 @@
-# knit
+# clasp
 
 Consensus fusion primitives: Reciprocal Rank Fusion (RRF), Borda count, and Condorcet voting.
 
 Dual-licensed under MIT or Apache-2.0.
 
 ```rust
-use knit::rrf_k_fuse;
+use clasp::rrf_k_fuse;
 
 let list1 = vec!["A", "B", "C"]; // Rank 1, 2, 3
 let list2 = vec!["B", "A", "D"]; // Rank 1, 2, 3
