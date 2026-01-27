@@ -1,0 +1,20 @@
+[package]
+name = "clasp-python"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Python bindings for clasp (rank fusion)"
+repository = "https://github.com/arclabs561/clasp"
+readme = "README.md"
+
+[lib]
+name = "clasp_py"
+crate-type = ["rlib"]
+doc = false
+
+[dependencies]
+clasp = { path = ".." }
+pyo3 = { workspace = true }
+

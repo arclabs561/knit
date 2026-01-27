@@ -1,0 +1,16 @@
+[package]
+name = "clasp-wasm"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+publish = false
+description = "WASM bindings for clasp (rank fusion)"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+clasp = { path = "../.." }
+wasm-bindgen = "0.2.106"
+js-sys = "0.3"
+

@@ -1,0 +1,21 @@
+[package]
+name = "clasp"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "Rank fusion for hybrid search: RRF, ISR, CombMNZ, Borda, DBSF. Combines multiple retrieval results."
+repository = "https://github.com/arclabs561/clasp"
+keywords = ["rank-fusion", "retrieval", "rrf"]
+categories = ["algorithms", "mathematics", "science"]
+
+[dependencies]
+serde = { workspace = true, optional = true }
+
+[features]
+default = []
+serde = ["dep:serde"]
+
+[dev-dependencies]
+criterion = { workspace = true }
+proptest = { workspace = true }
+

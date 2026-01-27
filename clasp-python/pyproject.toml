@@ -1,0 +1,52 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "cerno-fuse"
+version = "0.1.20"
+description = "Python bindings for cerno-fuse — rank fusion algorithms for hybrid search"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT OR Apache-2.0" }
+authors = [{ name = "Arc", email = "attobop@gmail.com" }]
+keywords = ["vector-search", "hybrid-search", "rrf", "rag", "search", "cerno-fuse"]
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://github.com/arclabs561/cerno/tree/main/crates/cerno-fuse"
+Documentation = "https://docs.rs/cerno-fuse"
+Repository = "https://github.com/arclabs561/cerno/tree/main/crates/cerno-fuse"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "mypy>=1.0.0",
+]
+
+[tool.uv]
+# Rebuild package when Rust files change
+cache-keys = [
+    { file = "pyproject.toml" },
+    { file = "../Cargo.toml" },
+    { file = "../src/**/*.rs" },
+    { file = "src/**/*.rs" },
+]
+# Build in development mode for faster iteration
+# Uncomment to use debug builds during development:
+# config-settings = { build-args = '--profile=dev' }
+
